@@ -1,0 +1,7 @@
+{{yield}}
+
+<ul>
+	{{#each tickets as |ticket|}}
+		<li>{{ticket.id}} - {{ticket.status}} - {{ticket.createdDateTime}} - {{ticket.serviceOrder.orderId}}</li>
+	{{/each}}
+</ul>
